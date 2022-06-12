@@ -1,13 +1,10 @@
 // Update here your pgAdmin access credential here & project database name
 
-
 const parse = require('pg-connection-string').parse;
-const config = parse(process.env.DATABASE_URL);
-// const config = parse(process.env.LOCAL_DATABASE_URL);
-console.log(parse, "parseeeeeeee")
-console.log(process.env.PRODUCTION_DATABASE_URL, "parseeeeeeee")
+const config = parse(  process.env.NODE_ENV === 'production' ?  
+process.env.DATABASE_URL : process.env.LOCAL_DATABASE_URL);
 console.log(config, "parseeeeeeee")
-
+ 
 
 module.exports = ({ env }) => ({
     defaultConnection: 'default',
