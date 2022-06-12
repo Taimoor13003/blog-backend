@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "ads_imgs",
+  "info": {
+    "name": "ads Img",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "adsImg": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ads-img.image"
+    }
+  }
+}
