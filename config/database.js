@@ -2,7 +2,7 @@
 
 
 const parse = require('pg-connection-string').parse;
-const config = parse(process.env.PRODUCTION_DATABASE_URL);
+const config = parse(process.env.DATABASE_URL);
 // const config = parse(process.env.LOCAL_DATABASE_URL);
 console.log(parse, "parseeeeeeee")
 console.log(process.env.PRODUCTION_DATABASE_URL, "parseeeeeeee")
