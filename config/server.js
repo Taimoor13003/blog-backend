@@ -1,8 +1,8 @@
-// const port = process.env.PORT || 1337
+const port = process.env.PORT || 1337
 
 module.exports = ({ env }) => ({
-  // host: env('HOST', '0.0.0.0'),
-  // port: env.int('PORT', port),
+  host: env('HOST', '0.0.0.0'),
+  port: env.int('PORT', port),
   proxy: true,
   url: env('MY_HEROKU_URL'),
   app: { 
