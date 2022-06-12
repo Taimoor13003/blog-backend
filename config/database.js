@@ -2,8 +2,8 @@
 
 
 const parse = require('pg-connection-string').parse;
-const config = parse(process.env.PRODUCTION_DATABASE_URL);
-// const config = parse(process.env.LOCAL_DATABASE_URL);
+// const config = parse(process.env.PRODUCTION_DATABASE_URL);
+const config = parse(process.env.LOCAL_DATABASE_URL);
 console.log(parse, "parseeeeeeee")
 console.log(process.env.PRODUCTION_DATABASE_URL, "parseeeeeeee")
 console.log(config, "parseeeeeeee")
@@ -15,6 +15,7 @@ module.exports = ({ env }) => ({
         default: {
         connector: 'bookshelf',
         settings: {
+            // client: 'postgres',
             client: 'postgresql',
             host: env('DATABASE_HOST', config.host),
             port: env.int('DATABASE_PORT', config.port),
