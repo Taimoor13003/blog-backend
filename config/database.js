@@ -12,14 +12,18 @@ module.exports = ({ env }) => ({
         default: {
         connector: 'bookshelf',
         settings: {
-            // client: 'postgres',
+            client: 'postgres',
             client: 'postgresql',
             host: env('DATABASE_HOST', config.host),
             port: env.int('DATABASE_PORT', config.port),
             database: env('DATABASE_NAME', config.database),
             username: env('DATABASE_USERNAME', config.user),
             password: env('DATABASE_PASSWORD', config.password),
-            ssl: env.bool('DATABASE_SSL', false),
+            // ssl: env.bool('DATABASE_SSL', false),
+            ssl: {
+                require: true,
+                rejectUnauthorized: false
+              }
         },
         options: {}
         },
