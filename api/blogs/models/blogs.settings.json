@@ -66,6 +66,14 @@
       "type": "component",
       "repeatable": false,
       "component": "seo-data.seo-data"
+    },
+    "preventIndexing": {
+      "type": "boolean",
+      "default": false
+    },
+    "keywords": {
+      "type": "string",
+      "required": true
     }
   }
 }
