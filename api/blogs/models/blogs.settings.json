@@ -61,6 +61,11 @@
     },
     "youtubeVideoId": {
       "type": "string"
+    },
+    "seoData": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo-data.seo-data"
     }
   }
 }
