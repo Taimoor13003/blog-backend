@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_seo_data_seos",
+  "info": {
+    "name": "SEO",
+    "icon": "baseball-ball"
+  },
+  "options": {},
+  "attributes": {
+    "metaTitle": {
+      "type": "string",
+      "required": true
+    },
+    "metaDescription": {
+      "type": "string",
+      "required": true
+    },
+    "SeoImage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo-data.seo-image"
+    }
+  }
+}
