@@ -74,6 +74,11 @@
     "keywords": {
       "type": "string",
       "required": true
+    },
+    "RelatedArticles": {
+      "type": "component",
+      "repeatable": false,
+      "component": "related-articles.related-articles"
     }
   }
 }
