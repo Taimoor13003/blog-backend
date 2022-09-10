@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "sidebar_modals",
+  "info": {
+    "singularName": "sidebar-modal",
+    "pluralName": "sidebar-modals",
+    "displayName": "Sidebar-modal",
+    "name": "sidebar-modal"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "instagram": {
+      "type": "component",
+      "repeatable": true,
+      "component": "single-img.image"
+    },
+    "phoneNumber": {
+      "type": "string",
+      "default": "+1 (123) 456 7890",
+      "required": false
+    },
+    "email": {
+      "type": "string",
+      "default": "hello@tozi.com"
+    },
+    "socialLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "social-link.links"
+    }
+  }
+}

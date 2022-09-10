@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_contact_info_infos",
+  "info": {
+    "name": "info",
+    "icon": "arrows-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "iconName": {
+      "type": "string",
+      "default": "bx bx-map",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "default": "Our Address",
+      "required": true
+    },
+    "text": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

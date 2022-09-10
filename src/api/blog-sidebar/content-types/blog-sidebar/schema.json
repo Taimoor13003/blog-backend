@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "blog_sidebars",
+  "info": {
+    "singularName": "blog-sidebar",
+    "pluralName": "blog-sidebars",
+    "displayName": "Blog-sidebar",
+    "name": "blog-sidebar"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "adsImg": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ads-img.image"
+    },
+    "socialLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "social-link.links"
+    }
+  }
+}

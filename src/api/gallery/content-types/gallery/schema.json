@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "galleries",
+  "info": {
+    "singularName": "gallery",
+    "pluralName": "galleries",
+    "displayName": "Gallery",
+    "name": "gallery"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "gallery": {
+      "type": "component",
+      "repeatable": true,
+      "component": "gallery.image"
+    }
+  }
+}

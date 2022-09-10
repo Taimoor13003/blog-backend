@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "top_headers",
+  "info": {
+    "singularName": "top-header",
+    "pluralName": "top-headers",
+    "displayName": "Top-header",
+    "name": "top-header"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "pages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page-links.link"
+    }
+  }
+}

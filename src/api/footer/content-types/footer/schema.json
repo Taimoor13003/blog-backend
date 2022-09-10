@@ -1,0 +1,53 @@
+{
+  "kind": "singleType",
+  "collectionName": "footers",
+  "info": {
+    "singularName": "footer",
+    "pluralName": "footers",
+    "displayName": "Footer",
+    "name": "footer"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false,
+      "required": true
+    },
+    "helpfulLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page-links.link"
+    },
+    "googlePlayUrl": {
+      "type": "string",
+      "default": "https://play.google.com/store/apps"
+    },
+    "appleStoreUrl": {
+      "type": "string",
+      "default": "https://www.apple.com/store"
+    },
+    "followUs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "social-link.links"
+    },
+    "privacyTerms": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page-links.link"
+    },
+    "copyrightText": {
+      "type": "string",
+      "default": "Copyright 2022 Tozi. is Proudly Crafted by EnvyTheme",
+      "required": true
+    }
+  }
+}

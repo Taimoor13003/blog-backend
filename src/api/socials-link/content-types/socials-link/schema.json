@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "socials_links",
+  "info": {
+    "singularName": "socials-link",
+    "pluralName": "socials-links",
+    "displayName": "Socials-link",
+    "name": "socials-link"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "social-link.links"
+    }
+  }
+}

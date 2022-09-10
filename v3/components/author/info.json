@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_author_infos",
+  "info": {
+    "name": "info",
+    "icon": "align-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "designation": {
+      "type": "string",
+      "required": true
+    },
+    "shortDec": {
+      "type": "text",
+      "required": false
+    }
+  }
+}

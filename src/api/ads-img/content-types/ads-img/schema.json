@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "ads_imgs",
+  "info": {
+    "singularName": "ads-img",
+    "pluralName": "ads-imgs",
+    "displayName": "Ads-img",
+    "name": "ads-img"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "adsImg": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ads-img.image"
+    }
+  }
+}

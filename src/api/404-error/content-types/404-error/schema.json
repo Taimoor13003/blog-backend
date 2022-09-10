@@ -1,0 +1,45 @@
+{
+  "kind": "singleType",
+  "collectionName": "404_errors",
+  "info": {
+    "singularName": "404-error",
+    "pluralName": "404-errors",
+    "displayName": "404-error",
+    "name": "404-error"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "image": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false,
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "default": "Error 404 : Page Not Found",
+      "required": true
+    },
+    "shortDec": {
+      "type": "string",
+      "default": "The page you are looking for might have been removed had its name changed or is temporarily unavailable.",
+      "required": true
+    },
+    "btnText": {
+      "type": "string",
+      "default": "Back to Homepage",
+      "required": true
+    },
+    "btnUrl": {
+      "type": "string",
+      "default": "/",
+      "required": true
+    }
+  }
+}

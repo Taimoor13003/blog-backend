@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_infos",
+  "info": {
+    "singularName": "contact-info",
+    "pluralName": "contact-infos",
+    "displayName": "Contact-info",
+    "name": "contact-info"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "image": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false,
+      "required": true
+    },
+    "googleMap": {
+      "type": "text"
+    },
+    "info": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contact-info.info"
+    }
+  }
+}
