@@ -1,22 +1,2 @@
-module.exports = {
-  routes: [
-    {
-      method: 'GET',
-      path: '/contact-info',
-      handler: 'contact-info.find',
-      config: { policies: [] }
-    },
-    {
-      method: 'PUT',
-      path: '/contact-info',
-      handler: 'contact-info.update',
-      config: { policies: [] }
-    },
-    {
-      method: 'DELETE',
-      path: '/contact-info',
-      handler: 'contact-info.delete',
-      config: { policies: [] }
-    }
-  ]
-}
+const { createCoreRouter } = require('@strapi/strapi').factories;
+module.exports = createCoreRouter('api::contact-info.contact-info');

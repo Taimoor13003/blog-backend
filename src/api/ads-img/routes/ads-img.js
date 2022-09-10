@@ -1,22 +1,2 @@
-module.exports = {
-  routes: [
-    {
-      method: 'GET',
-      path: '/ads-img',
-      handler: 'ads-img.find',
-      config: { policies: [] }
-    },
-    {
-      method: 'PUT',
-      path: '/ads-img',
-      handler: 'ads-img.update',
-      config: { policies: [] }
-    },
-    {
-      method: 'DELETE',
-      path: '/ads-img',
-      handler: 'ads-img.delete',
-      config: { policies: [] }
-    }
-  ]
-}
+const { createCoreRouter } = require('@strapi/strapi').factories;
+module.exports = createCoreRouter('api::ads-img.ads-img');

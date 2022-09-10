@@ -1,22 +1,2 @@
-module.exports = {
-  routes: [
-    {
-      method: 'GET',
-      path: '/blog-sidebar',
-      handler: 'blog-sidebar.find',
-      config: { policies: [] }
-    },
-    {
-      method: 'PUT',
-      path: '/blog-sidebar',
-      handler: 'blog-sidebar.update',
-      config: { policies: [] }
-    },
-    {
-      method: 'DELETE',
-      path: '/blog-sidebar',
-      handler: 'blog-sidebar.delete',
-      config: { policies: [] }
-    }
-  ]
-}
+const { createCoreRouter } = require('@strapi/strapi').factories;
+module.exports = createCoreRouter('api::blog-sidebar.blog-sidebar');

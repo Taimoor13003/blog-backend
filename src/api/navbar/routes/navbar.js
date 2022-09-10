@@ -1,22 +1,2 @@
-module.exports = {
-  routes: [
-    {
-      method: 'GET',
-      path: '/navbar',
-      handler: 'navbar.find',
-      config: { policies: [] }
-    },
-    {
-      method: 'PUT',
-      path: '/navbar',
-      handler: 'navbar.update',
-      config: { policies: [] }
-    },
-    {
-      method: 'DELETE',
-      path: '/navbar',
-      handler: 'navbar.delete',
-      config: { policies: [] }
-    }
-  ]
-}
+const { createCoreRouter } = require('@strapi/strapi').factories;
+module.exports = createCoreRouter('api::navbar.navbar');

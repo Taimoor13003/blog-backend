@@ -1,22 +1,2 @@
-module.exports = {
-  routes: [
-    {
-      method: 'GET',
-      path: '/404-error',
-      handler: '404-error.find',
-      config: { policies: [] }
-    },
-    {
-      method: 'PUT',
-      path: '/404-error',
-      handler: '404-error.update',
-      config: { policies: [] }
-    },
-    {
-      method: 'DELETE',
-      path: '/404-error',
-      handler: '404-error.delete',
-      config: { policies: [] }
-    }
-  ]
-}
+const { createCoreRouter } = require('@strapi/strapi').factories;
+module.exports = createCoreRouter('api::404-error.404-error');

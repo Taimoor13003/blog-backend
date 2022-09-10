@@ -1,22 +1,2 @@
-module.exports = {
-  routes: [
-    {
-      method: 'GET',
-      path: '/privacy-policy',
-      handler: 'privacy-policy.find',
-      config: { policies: [] }
-    },
-    {
-      method: 'PUT',
-      path: '/privacy-policy',
-      handler: 'privacy-policy.update',
-      config: { policies: [] }
-    },
-    {
-      method: 'DELETE',
-      path: '/privacy-policy',
-      handler: 'privacy-policy.delete',
-      config: { policies: [] }
-    }
-  ]
-}
+const { createCoreRouter } = require('@strapi/strapi').factories;
+module.exports = createCoreRouter('api::privacy-policy.privacy-policy');

@@ -1,22 +1,2 @@
-module.exports = {
-  routes: [
-    {
-      method: 'GET',
-      path: '/faqs',
-      handler: 'faq.find',
-      config: { policies: [] }
-    },
-    {
-      method: 'PUT',
-      path: '/faqs',
-      handler: 'faq.update',
-      config: { policies: [] }
-    },
-    {
-      method: 'DELETE',
-      path: '/faqs',
-      handler: 'faq.delete',
-      config: { policies: [] }
-    }
-  ]
-}
+const { createCoreRouter } = require('@strapi/strapi').factories;
+module.exports = createCoreRouter('api::faq.faq');
