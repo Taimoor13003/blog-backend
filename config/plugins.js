@@ -16,6 +16,17 @@ module.exports = ({ env }) => ({
           },
         },
       },
+      gatsby: {
+        enabled: true,
+        headers: {
+          'x-gatsby-cloud-data-source': '@relate-app/gatsby-source-strapi',
+        },
+      },
+    // 'gatsby-preview': {
+    //   enabled : true,
+    //   // resolve : './src/plugins/gatsby-preview'
+    //   resolve : '../src/plugins/gatsby-preview'
+    // },
 });
 
 // module.exports = ({ env }) => ({
