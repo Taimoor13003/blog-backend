@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sample_collections",
+  "info": {
+    "singularName": "sample-collection",
+    "pluralName": "sample-collections",
+    "displayName": "sampleCollection"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

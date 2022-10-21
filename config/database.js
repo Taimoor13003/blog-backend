@@ -5,7 +5,6 @@ const config = parse(  process.env.NODE_ENV === 'production' ?
 process.env.DATABASE_URL : process.env.LOCAL_DATABASE_URL);
 console.log(config, "parseeeeeeee")
  
-
 module.exports = ({ env }) => ({
   connection: {
     client: 'postgres',

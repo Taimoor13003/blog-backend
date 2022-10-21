@@ -1,15 +1,13 @@
 {
   "kind": "singleType",
-  "collectionName": "404_errors",
+  "collectionName": "errors_404",
   "info": {
-    "singularName": "404-error",
-    "pluralName": "404-errors",
-    "displayName": "404-error",
-    "name": "404-error"
+    "singularName": "error-404",
+    "pluralName": "errors-404",
+    "displayName": "error-404",
+    "name": "error-404"
   },
   "options": {
-    "increments": true,
-    "timestamps": true,
     "draftAndPublish": true
   },
   "attributes": {

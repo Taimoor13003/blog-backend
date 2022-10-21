@@ -7,12 +7,10 @@
   "options": {},
   "attributes": {
     "image": {
-      "model": "file",
-      "via": "related",
+      "type": "media",
       "allowedTypes": [
         "images"
       ],
-      "plugin": "upload",
       "required": true
     }
   }

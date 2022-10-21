@@ -12,12 +12,11 @@
       "required": true
     },
     "image": {
-      "model": "file",
+      "type": "media",
       "via": "related",
       "allowedTypes": [
         "images"
       ],
-      "plugin": "upload",
       "required": true
     },
     "designation": {

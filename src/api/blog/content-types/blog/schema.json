@@ -5,11 +5,10 @@
     "singularName": "blog",
     "pluralName": "blogs",
     "displayName": "Blog",
-    "name": "blog"
+    "name": "blog",
+    "description": ""
   },
   "options": {
-    "increments": true,
-    "timestamps": true,
     "draftAndPublish": true
   },
   "attributes": {
@@ -26,13 +25,15 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::category.category",
-      "inversedBy": "blogs"
+      "inversedBy": "blogs",
+      "required": true
     },
     "tags": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::tag.tag",
-      "inversedBy": "blogs"
+      "inversedBy": "blogs",
+      "required": true
     },
     "shortText": {
       "type": "text"
@@ -51,11 +52,11 @@
     },
     "image": {
       "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images"
-      ],
-      "multiple": false,
-      "required": true
+      ]
     },
     "author": {
       "type": "component",
@@ -76,13 +77,22 @@
       "default": false
     },
     "keywords": {
-      "type": "string",
-      "required": true
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::keyword.keyword",
+      "inversedBy": "blogs"
     },
     "RelatedArticles": {
-      "type": "component",
-      "repeatable": false,
-      "component": "related-articles.related-articles"
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::blog.blog",
+      "mappedBy": "blogs"
+    },
+    "blogs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::blog.blog",
+      "inversedBy": "RelatedArticles"
     }
   }
 }
