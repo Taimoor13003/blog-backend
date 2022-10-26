@@ -93,6 +93,10 @@
       "relation": "manyToMany",
       "target": "api::blog.blog",
       "inversedBy": "RelatedArticles"
+    },
+    "StructuredData": {
+      "type": "json",
+      "required": true
     }
   }
 }
