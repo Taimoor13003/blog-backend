@@ -14,10 +14,17 @@
       "type": "string",
       "required": true
     },
-    "seoMedia": {
-      "type": "component",
-      "repeatable": false,
-      "component": "seo-data.seo-media"
+    "featureImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "featureImageAlt": {
+      "type": "string",
+      "required": true
     }
   }
 }
