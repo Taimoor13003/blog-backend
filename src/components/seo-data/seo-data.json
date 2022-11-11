@@ -22,9 +22,14 @@
         "images"
       ]
     },
-    "featureImageAlt": {
-      "type": "string",
-      "required": true
+    "keywords": {
+      "type": "component",
+      "repeatable": true,
+      "component": "keywords.keywords"
+    },
+    "preventIndexing": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
