@@ -16,7 +16,7 @@
       "type": "string",
       "required": true,
       "minLength": 35,
-      "maxLength": 60
+      "maxLength": 70
     },
     "slug": {
       "type": "uid",
@@ -73,10 +73,6 @@
       "type": "component",
       "repeatable": false,
       "component": "seo-data.seo-data"
-    },
-    "preventIndexing": {
-      "type": "boolean",
-      "default": false
     },
     "keywords": {
       "type": "relation",
