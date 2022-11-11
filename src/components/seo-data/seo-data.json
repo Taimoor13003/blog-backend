@@ -30,6 +30,10 @@
     "preventIndexing": {
       "type": "boolean",
       "default": false
+    },
+    "StructuredData": {
+      "type": "json",
+      "required": true
     }
   }
 }
