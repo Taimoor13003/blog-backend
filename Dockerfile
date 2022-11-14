@@ -16,7 +16,11 @@ RUN yarn build
 EXPOSE 1337
 CMD ["yarn", "develop"]
 
+# to build image use 
+# sudo docker build -t mydockerstrapilatest .
 
+# to run use 
+# sudo  docker run --publish 1337:1337 mydockerstrapilatest:latest
 
 
 # FROM node:16
