@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_related_articles_related_blogs",
+  "info": {
+    "displayName": "RelatedBlogs",
+    "icon": "check-square"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "You might also be interested in...",
+      "required": true,
+      "maxLength": 50
+    },
+    "blogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog"
+    }
+  }
+}
