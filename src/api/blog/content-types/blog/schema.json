@@ -74,12 +74,6 @@
       "repeatable": false,
       "component": "seo-data.seo-data"
     },
-    "keywords": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::keyword.keyword",
-      "inversedBy": "blogs"
-    },
     "RelatedArticles": {
       "type": "relation",
       "relation": "manyToMany",
