@@ -20,6 +20,10 @@
     "text": {
       "type": "richtext",
       "required": true
+    },
+    "preventIndexing": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
