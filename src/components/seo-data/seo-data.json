@@ -14,14 +14,6 @@
       "type": "string",
       "required": true
     },
-    "featureImage": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
-      "allowedTypes": [
-        "images"
-      ]
-    },
     "preventIndexing": {
       "type": "boolean",
       "default": false
