@@ -21,6 +21,10 @@
     "StructuredData": {
       "type": "json",
       "required": true
+    },
+    "keywords": {
+      "type": "string",
+      "required": true
     }
   }
 }
