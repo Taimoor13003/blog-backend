@@ -66,9 +66,6 @@
       "component": "author.info",
       "required": true
     },
-    "youtubeVideoId": {
-      "type": "string"
-    },
     "seoData": {
       "type": "component",
       "repeatable": false,
