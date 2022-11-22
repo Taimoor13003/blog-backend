@@ -2,7 +2,7 @@
   "name": "Dopefacts",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "Matter of fact",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
