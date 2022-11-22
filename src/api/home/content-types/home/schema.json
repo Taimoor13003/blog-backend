@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "Home"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "sloganLine": {
+      "type": "string"
+    },
+    "StructuredData": {
+      "type": "json",
+      "required": true
+    },
+    "preventIndexing": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}
