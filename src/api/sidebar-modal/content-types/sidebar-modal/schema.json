@@ -20,7 +20,7 @@
     },
     "phoneNumber": {
       "type": "string",
-      "default": "+1 (123) 456 7890",
+      "default": "+(92 (312) 127 8993)",
       "required": false
     },
     "email": {
