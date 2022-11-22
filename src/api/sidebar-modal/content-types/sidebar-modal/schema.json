@@ -25,7 +25,7 @@
     },
     "email": {
       "type": "string",
-      "default": "hello@tozi.com"
+      "default": "info@dopefact.com"
     },
     "socialLinks": {
       "type": "component",
