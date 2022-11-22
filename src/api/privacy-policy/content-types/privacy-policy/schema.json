@@ -5,7 +5,8 @@
     "singularName": "privacy-policy",
     "pluralName": "privacy-policies",
     "displayName": "Privacy-policy",
-    "name": "privacy-policy"
+    "name": "privacy-policy",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,8 +14,11 @@
   "attributes": {
     "content": {
       "type": "richtext",
-      "private": false,
       "required": true
+    },
+    "preventIndexing": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
