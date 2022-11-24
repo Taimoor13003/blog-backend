@@ -5,7 +5,8 @@
     "singularName": "home",
     "pluralName": "homes",
     "displayName": "Home",
-    "name": "home"
+    "name": "home",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,14 +15,10 @@
     "sloganLine": {
       "type": "string"
     },
-    "StructuredData": {
-      "type": "json",
-      "required": true
-    },
-    "preventIndexing": {
-      "type": "boolean",
-      "default": false,
-      "required": true
+    "seoData": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo-data.seo-data"
     }
   }
 }
