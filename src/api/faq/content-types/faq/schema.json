@@ -5,7 +5,8 @@
     "singularName": "faq",
     "pluralName": "faqs",
     "displayName": "Faq",
-    "name": "faq"
+    "name": "faq",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -21,6 +22,11 @@
     "preventIndexing": {
       "type": "boolean",
       "default": false
+    },
+    "seoData": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo-data.seo-data"
     }
   }
 }
