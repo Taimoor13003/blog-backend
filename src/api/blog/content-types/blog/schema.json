@@ -60,12 +60,6 @@
         "images"
       ]
     },
-    "author": {
-      "type": "component",
-      "repeatable": false,
-      "component": "author.info",
-      "required": true
-    },
     "seoData": {
       "type": "component",
       "repeatable": false,
@@ -75,6 +69,12 @@
       "type": "component",
       "repeatable": false,
       "component": "related-articles.related-blogs"
+    },
+    "author": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::author.author",
+      "inversedBy": "blogs"
     }
   }
 }
