@@ -46,6 +46,14 @@
       "relation": "oneToMany",
       "target": "api::blog.blog",
       "mappedBy": "author"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Organization"
+      ],
+      "required": true,
+      "default": "Organization"
     }
   }
 }
