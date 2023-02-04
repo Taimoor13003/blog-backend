@@ -75,6 +75,11 @@
       "relation": "manyToOne",
       "target": "api::author.author",
       "inversedBy": "blogs"
+    },
+    "faq": {
+      "type": "component",
+      "repeatable": true,
+      "component": "faq.list"
     }
   }
 }
